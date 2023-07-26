@@ -47,26 +47,33 @@
         <nav class="container mx-auto lg:text-white ">
             <div class="navbar bg-base-100 lg:bg-red-400 rounded-full   ">
 
-                <div class="">
+                <div class="order-3 ">
                     <div class="dropdown">
-                        <label tabindex="0" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
+
+                        <label tabindex="0" class="btn btn-ghost lg:hidden pl-20 md:pl-5  ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" viewBox="0 0 18 12"
+                                fill="none">
+                                <path d="M0.75 0.75H17.25M0.75 6H17.25M0.75 11.25H17.25" stroke="#121212"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </label>
+
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-medium">
+                            class=" menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box  font-medium md:flex w-[150px] absolute">
                             <li><a>Home</a></li>
                             <li><a>About Us</a></li>
                             <li><a>Shop</a></li>
                             <li><a>All Fruits</a></li>
+                            <li class=""><a><input type="text" placeholder="Enter search text"
+                                        class="input input-bordered w-full text-gray-600 max-w-xs h-9 rounded-full" /></a>
+                            </li>
+
                         </ul>
                     </div>
 
                 </div>
-                <div class="navbar-start hidden lg:flex">
+
+                <div class="navbar-start md:order-1 hidden lg:flex">
                     <ul class="menu menu-horizontal px-2  font-medium">
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
@@ -74,18 +81,22 @@
                         <li><a>All Fruits</a></li>
                     </ul>
                 </div>
-                <div class="navbar-center btn  btn-ghost gap-2">
+
+
+                <div class="navbar-center btn order-1 md:order-3  btn-ghost gap-2">
                     <img src="./images/logo.png" class="w-[45px] " alt="">
                     <a href="index.html" class="font-extrabold normal-case text-3xl">Fruit Burst</a>
 
                 </div>
 
-                <div class="navbar-end ">
+                <div class="navbar-end order-4 ">
                     <div class="form-control w-full max-w-xs lg:p-2 ">
                         <input type="text" placeholder="Type here"
                             class="input input-bordered w-full text-gray-600 max-w-xs rounded-full hidden md:flex" />
                     </div>
                 </div>
+
+
             </div>
         </nav>
         <section class="container mx-auto mt-14">
@@ -559,7 +570,8 @@
         <!-- start Why Choose Us -->
         <section class="py-16">
             <h2 class="lg:text-5xl text-3xl font-extrabold text-center lg:text-center ">Why Choose Us</h2>
-            <p class="text-lg font-medium  text-[#121212] py-9 text-center">Contrary to popular belief, is not simply random text. It
+            <p class="text-lg font-medium  text-[#121212] py-9 text-center">Contrary to popular belief, is not simply
+                random text. It
                 has roots in a piece of classical Latin<br>
                 literature from 45 BC, making it over 2000 years old.</p>
 
@@ -577,7 +589,8 @@
                         <div class="">
                             <h2 class="font-extrabold text-xl lg:text-3xl pb-1">Dedicated Team</h2>
                             <div class="border-[#121212] border-b-[1px] h-1 w-1/2"></div>
-                            <p class="pt-1  text-sm ">Professional employees are there for you to pick the most amazing and fresh
+                            <p class="pt-1  text-sm ">Professional employees are there for you to pick the most amazing
+                                and fresh
                                 fruits.</p>
                         </div>
                     </div>
@@ -593,7 +606,8 @@
                         <div class="">
                             <h2 class="font-extrabold text-xl lg:text-3xl pb-1">Fresh is Best</h2>
                             <div class="border-[#121212] border-b-[1px] h-1 w-1/2"></div>
-                            <p class="pt-1  text-sm ">Professional employees are there for you to pick the most amazing and fresh
+                            <p class="pt-1  text-sm ">Professional employees are there for you to pick the most amazing
+                                and fresh
                                 fruits.</p>
                         </div>
                     </div>
@@ -649,7 +663,8 @@
                         <div class="">
                             <h2 class="font-extrabold text-xl lg:text-3xl pb-1">Gift Certificates</h2>
                             <div class="border-[#121212] border-b-[1px] h-1 w-1/2"></div>
-                            <p class="pt-1  text-sm ">Professional employees are there for you to pick the most amazing and fresh
+                            <p class="pt-1  text-sm ">Professional employees are there for you to pick the most amazing
+                                and fresh
                                 fruits.</p>
                         </div>
                     </div>
@@ -663,7 +678,8 @@
                         <div class="">
                             <h2 class="font-extrabold text-xl md:text-3xl lg:text-right pb-1">Integrated Supplier</h2>
                             <div class="border-[#121212] border-b-[1px] h-1 w-1/2 lg:ml-auto"></div>
-                            <p class="pt-1 lg:text-right text-sm">Professional employees are there for you to pick the most
+                            <p class="pt-1 lg:text-right text-sm">Professional employees are there for you to pick the
+                                most
                                 amazing and fresh fruits.</p>
                         </div>
                         <div class="p-5 bg-slate-200 rounded-full my-auto">
@@ -712,10 +728,11 @@
 
                     <div class="flex gap-5 py-3 flex-row-reverse lg:flex-row">
                         <div class="">
-                             <h2 class="font-extrabold text-xl md:text-3xl lg:text-right pb-1">Sustainable Practice</h2>
+                            <h2 class="font-extrabold text-xl md:text-3xl lg:text-right pb-1">Sustainable Practice</h2>
                             <div class="border-[#121212] border-b-[1px] h-1 w-1/2 lg:ml-auto"></div>
-                             
-                            <p class="pt-1 lg:text-right text-sm">Professional employees are there for you to pick the most
+
+                            <p class="pt-1 lg:text-right text-sm">Professional employees are there for you to pick the
+                                most
                                 amazing and fresh fruits.</p>
                         </div>
                         <div class="p-5 bg-slate-200 rounded-full my-auto">
@@ -733,9 +750,10 @@
 
                     <div class="flex gap-5 py-3 flex-row-reverse lg:flex-row">
                         <div class="">
-                             <h2 class="font-extrabold text-xl md:text-3xl lg:text-right pb-1">The Benefits Only</h2>
+                            <h2 class="font-extrabold text-xl md:text-3xl lg:text-right pb-1">The Benefits Only</h2>
                             <div class="border-[#121212] border-b-[1px] h-1 w-1/2 lg:ml-auto"></div>
-                            <p class="pt-1 lg:text-right text-sm">Professional employees are there for you to pick the most
+                            <p class="pt-1 lg:text-right text-sm">Professional employees are there for you to pick the
+                                most
                                 amazing and fresh fruits.</p>
                         </div>
                         <div class="p-5 bg-slate-200 rounded-full my-auto">
@@ -772,7 +790,7 @@
             <a href="index.html" class="font-extrabold normal-case text-3xl">Fruit Burst</a>
 
         </div>
-        <div class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-4 font-semibold text-sm justify-center">
+        <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 font-semibold text-sm justify-center">
             <a class="link link-hover">Home</a>
             <a class="link link-hover">About Us</a>
             <a class="link link-hover">Shop</a>
